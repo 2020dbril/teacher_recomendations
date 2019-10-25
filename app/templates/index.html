@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Student Comment Generator</title>
+</head>
+<body>
+
+<div class="mx-auto text-center" style="height: 100px;">
+</div>
+<div class="mx-auto text-center" style="height: 175px;">
+    <h1><b>Student Comment Generator</b></h1>
+        <p class="lead">A simple tool to generate nuanced and personal comments for students.<br>Just input the info down below and hit submit.</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-lg">
+            <form method="POST" action="/">
+                <div class="form-group">
+                    <label for="Input1">Student Name</label>
+                    <input name="student_name" type="text" class="form-control" id="Input1" aria-describedby="emailHelp"
+                        placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="Input2">Exam Grade</label>
+                    <input name="exam_grade" type="number" min="0" max="100" class="form-control" id="Input2" aria-describedby="emailHelp"
+                        placeholder="Exam Grade">
+                </div>
+                <div class="form-group">
+                    <label for="Input3">Participation Grade</label>
+                    <input name="part_grade" type="number" min="0" max="100" class="form-control" id="Input3" aria-describedby="emailHelp"
+                        placeholder="Participation Grade">
+                </div>
+                <div class="form-group">
+                    <label for="Input4">Homework Grade</label>
+                    <input name="homework_grade" type="number" min="0" max="100" class="form-control" id="Input4"
+                        placeholder="Homework Grade">
+                </div>
+                <div class="form-group">
+                    <label for="Input5">Descriptive Quality</label>
+                    <input name="adj1" type="text" class="form-control" id="Input5"
+                        placeholder="Adjective">
+                </div>
+                <div class="form-group">
+                    <label for="Input6">Descriptive Quality</label>
+                    <input name="adj2" type="text" class="form-control" id="Input6"
+                        placeholder="Adjective">
+                </div>
+                <div class="form-group">
+                    <label for="Input7">Descriptive Quality</label>
+                    <input name="adj3" type="text" class="form-control" id="Input7"
+                        placeholder="Adjective">
+                </div>
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="text" style="height: 175px;">
+                <p class="lead"><b>{{ out }}</b></p>
+            </div>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
